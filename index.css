@@ -1,0 +1,18 @@
+html {
+	font-family: Helvetica;
+}
+h1 {
+	text-align: center;
+}
+button {
+	min-width: 20em;
+	padding: 1em;
+	font-size: inherit;
+}
+aside {
+	position: fixed;
+	top: 1em;
+	right: 1em;
+	width: 10em;
+	text-align: left;
+}

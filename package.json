@@ -1,0 +1,39 @@
+{
+  "name": "midi-play",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Testing out the Web MIDI API for playing sound",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify -o bundle.js ./",
+    "build": "browserify -o bundle.js ./",
+    "serve": "nws -p 9001 -o",
+    "dev": "npm run watch & npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RangerMauve/midi-play.git"
+  },
+  "keywords": [
+    "midi"
+  ],
+  "author": "rangermauve",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RangerMauve/midi-play/issues"
+  },
+  "homepage": "https://github.com/RangerMauve/midi-play",
+  "devDependencies": {
+    "browserify": "^9.0.7",
+    "watchify": "^3.1.0"
+  },
+  "dependencies": {
+    "note-player-stream": "^1.0.2",
+    "stdout": "0.0.3",
+    "through2": "^0.6.3",
+    "web-midi": "^0.5.0",
+    "web-midi-devices": "^1.0.0",
+    "web-midi-note-stream": "^1.0.0"
+  }
+}
